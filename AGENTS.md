@@ -16,17 +16,14 @@
 ## Styling
 - Material UI is the primary styling system
 - Custom colors, spacing, typography, etc. are defined in the Material UI theme
-- Components reference the theme instead of specifying hardcoded values
-- The theme can be extended when necessary
+- Components reference the Material UI theme instead of specifying hardcoded values
+- The Material UI theme can be extended when necessary
 - CSS is only used when something cannot be done cleanly with Material UI (exceptions: `index.css` and `App.css`)
 - When CSS is unavoidable, it is kept inside the component's `.tsx` file
 
-## DOs
-- Code must adhere to the established ESLint and Prettier configurations
+## General Guidelines
+- Follow the established ESLint and Prettier rules
 - Match the design system using the Material UI theme
-- Reuse theme tokens to keep spacing, color, and typography consistent
-
-## DON'Ts
-- Write tests (not necessary for this project)
-- Do anything related to git (the repo owner will handle it)
+- Don't write any tests (not necessary for this project)
+- Don't do anything related to git (the repo owner will handle it)
 - Don't introduce new libraries without asking first
