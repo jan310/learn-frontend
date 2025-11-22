@@ -6,10 +6,10 @@ interface ContainerProps {
   children: React.ReactNode;
 }
 
-export default function Protected({children}: ContainerProps) {
-  const {isAuthenticated, isLoading} = useAuth0();
+export default function Protected({ children }: ContainerProps) {
+  const { isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) return <div>Loading ...</div>;
 
-  return isAuthenticated ? children : <Navigate to='/'/>;
+  return isAuthenticated ? children : <Navigate to="/" />;
 }
